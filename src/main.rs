@@ -71,6 +71,7 @@ fn main() -> ! {
         info!("off!");
         led_pin.set_low().unwrap();
         delay.delay_ms(500);
+        core::panic!("at the disco");
     }
 }
 
